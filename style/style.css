@@ -1,0 +1,474 @@
+*{
+  font-family: 'FiraGO', sans-serif !important;
+
+}
+@import url('https://free.bboxtype.com/embedfonts/?family=FiraGO:300,400,500,600');
+.cont {
+    width: 90%; /* Adjust the percentage as per your design */
+    max-width: 1562px; /* Set a maximum width to prevent the container from becoming too wide on larger screens */
+    margin: 0 auto; /* Center the container horizontally */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+  }
+  
+  header {
+    background-color: #2A2F35;
+  }
+  
+  .logo {
+    width: 150px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: center;
+    flex-grow: 0; /* Allow the nav to grow and take up the remaining space */
+  }
+  
+  nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    font-family: 'FiraGO', sans-serif;
+    color: #fff;
+    margin-right: 3.1825vw;
+    position: relative; /* Add this line to position the underline */
+    font-weight: 300;
+
+  }
+  .nav-button{
+    text-decoration: none;
+    color: #FED154;
+    background-color: transparent; /* Button color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 40px;
+    width: 80px;
+    font-size: 20px;
+    font-family: 'FiraGO', sans-serif;
+
+  }
+  .burger-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  .burger-icon{
+    width: 18px;
+  }
+  nav li a {
+    font-size: 16px;
+    text-decoration: none;
+    color: inherit; /* Inherit the color from the parent element */
+    padding: 20px 0; /* Add this line to create some space around the link */
+    display: block; /* Add this line to make the link clickable across the entire width */
+  }
+
+  
+  nav li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #F4B301;
+    transition: width 0.3s ease;
+    margin-bottom: -12px;
+    margin-left: 25%;
+    border-radius: 100px;
+  }
+  
+  nav li a.active::after,
+  nav li a:hover::after {
+    width: 50%;
+    margin-left: 25%;
+  }
+  .welcome{
+    display: flex;
+    justify-content: center; /* horizontally centers content */
+    align-items: center; /* vertically centers content */
+    width: 100%;
+    height: 1070px;
+    max-width: 1920px;
+    max-height: 883px;
+    background-image: url(/img/background.png);
+  }
+  .container{
+    width: 90%; /* Adjust the percentage as per your design */
+    max-width: 1562px; /* Set a maximum width to prevent the container from becoming too wide on larger screens */
+    margin: 0 auto; /* Center the container horizontally */ 
+  }
+  .container-sec{
+    width: 100%;
+  }
+  .welcome-text{
+    width: 564px;
+    height: 219px;
+  }
+  .heading{
+    color: #fff;
+    font-size: 40px;
+    max-width: 500px;
+    margin-bottom: 10px;
+    font-family: 'FiraGO', sans-serif;
+
+  }
+  .paragrpaph{
+    color: #fff;
+    font-size: 40px;
+    margin-bottom: 30px;
+    font-family: 'FiraGO', sans-serif;
+
+  }
+  .welcome-content{
+    margin-bottom: 100px;
+    font-family: 'FiraGO', sans-serif;
+
+  }
+  .welcome-text{
+    font-family: 'FiraGO', sans-serif;
+  }
+  .sent-apply{
+    text-decoration: none;
+    color: #FED154;
+    background-color: #2A2F35; /* Button color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 240px;
+    height: 70px;
+    font-size: 20px;
+    font-family: 'FiraGO', sans-serif;
+
+
+  }
+  .services{
+    margin: 100px 0;
+    
+  }
+  .service-container{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  .cards-selection{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+  }
+  .cards{
+    
+    height: 528px;
+    margin-left: 3.6458333333333335vw;
+    -webkit-box-shadow: 0px 0px 70px -35px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 70px -35px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 70px -35px rgba(0,0,0,0.75);
+    background-image: url(/img/service-img.png);
+    border-radius: 10px;
+    margin-bottom: 3vw;
+  }
+  .list-card{
+    margin: 250px 30px;
+  }
+  .heading-content{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin:52.5px 0;
+    
+  }
+  .heading-service {
+    font-family: 'FiraGO', sans-serif;
+    padding-bottom: 10px;
+    color: #F4B301;
+    margin-bottom: 15px;
+    font-size: 30px;
+    
+  }
+  .heading-content-bottom{
+    height: 3px;
+    width: 70px;
+    background-color: #F4B301;
+    border-radius: 50px;
+  }
+
+  .heading-card{
+    margin-bottom:  10px;
+    width: 350px;
+    font-size: 28px;
+  }
+  .p-card{
+    font-size: 28px;
+  }
+  .list-card,.heading-card,.p-card{
+    color: #fff;
+    font-family: 'FiraGO', sans-serif;
+
+  }
+  .animated {
+    animation-duration: 1s;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .fadeIn {
+    animation-name: fadeIn;
+  }
+
+  .footer {
+    font-family: 'FiraGO', sans-serif;
+
+  background-color: #25292F;
+  }
+  
+  .footer .footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 3.5rem;
+    padding: 60px;
+  }
+  
+  .footer-col h4 {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+  
+  .footer-col .links {
+    margin-top: 20px;
+  }
+  
+  .footer-col .links li {
+    list-style: none;
+    margin-bottom: 10px;
+  }
+  
+  .footer-col .links li a {
+    text-decoration: none;
+    color: #bfbfbf;
+    
+  }
+  
+  .footer-col .links li a:hover {
+    color: #fff;
+  }
+  
+  .footer-col p {
+    margin: 20px 0;
+    color: #bfbfbf;
+    max-width: 300px;
+  }
+  
+  .footer-col form {
+    display: flex;
+    gap: 5px;
+  }
+  
+  .footer-col input {
+    height: 40px;
+    border-radius: 6px;
+    background: none;
+    width: 100%;
+    outline: none;
+    border: 1px solid #7489C6;
+    caret-color: #fff;
+    color: #fff;
+    padding-left: 10px;
+  }
+  .more-detail{
+    font-size: 20px;
+    color: #fff;
+    display: inline-block;
+   
+    bottom: 5%;
+    left: 45%;
+  }
+
+  
+  
+
+  @media screen and (max-width: 906px) {
+    .cards {
+    }
+  }
+
+  @media screen and (max-width: 708px) {
+    .welcome{
+      height: 700px;
+
+    }
+    .cards {
+      margin-left: 10px;
+    }
+    .swiper{
+      width: 100%;
+    }
+  }
+
+
+  /* ------------ RESPONSIVE STYLES ------------ */
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+
+  .swiper-wrapper{
+    transform: scale(0.4); 
+ /* Enable horizontal scrolling */
+  }
+
+  .card{
+    margin: 1em 0; /* Adjust margin */
+    transform: scale(0.7);
+}
+}
+
+@media screen and (max-width: 678px) {
+  .welcome{
+    text-align: center; /* Horizontally centers inline or inline-block elements */
+  }
+  .welcome-content {
+    display: inline-block; /* Ensures block-level elements are centered */
+    /* Your styles for the content */
+}
+.sent-apply{
+  margin: 0 auto;
+}
+.heading{
+  margin: 0 auto;
+}
+  nav{
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #25292F;
+    z-index: 1;
+  }
+  nav li a.active::after,
+  nav li a:hover::after {
+    width: 50%;
+    margin-left: 25%;
+  }
+  ul{
+    margin: 20px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav ul{
+    margin: 20% 0 0 0;
+  }
+  .close{
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px;
+ 
+  }
+  .close-but{
+    width: 30px;
+  }
+  nav li a::after {
+    margin-bottom: 0;
+  }
+  li{
+    margin-bottom: 20%;
+  }
+  .logo{
+    z-index: 2;
+  }
+  .more-detail{
+    font-size: 20px;
+    color: #fff;
+    display: inline-block;
+    bottom: 20%;
+    left: 35%;
+  }
+}
+@media screen and (min-width: 678px) {
+  .burger-menu{
+    display: none;
+  }
+  nav{
+    display: block !important; 
+    
+  }
+  .close {
+    display: none !important;
+  }
+}
+
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+  .swiper{
+      height: auto; /* Auto height */
+
+  }
+
+  .swiper-wrapper{
+      flex-direction: column; /* Display swiper cards in a column */
+      align-items: center;
+      justify-content: center; /* Center cards horizontally */
+      overflow-x: hidden; /* Hide horizontal scrollbar */
+  }
+
+  .card{
+      margin: 1em 0; /* Adjust margin */
+  }
+  .cards{
+    transform: scale(0.7); 
+  }
+  .heading{
+    margin: 0 12px 20px;
+    font-size: 28px;
+    width: 300px;
+  }
+  .sent-apply{
+    transform: scale(0.9);
+    z-index: 0;
+  }
+  .welcome-content{
+    
+    display: flex;
+    flex-wrap: wrap;
+    align-content: ;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+  
+@media screen and (min-width: 678px) {
+.more-detail{
+  position: absolute;
+  
+}
+}
