@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/reset.css">
     <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/slide.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style/pages.css">
     <link href="https://free.bboxtype.com/embedfonts/?family=FiraGO:300,400,500,600" rel="stylesheet">    <title>Salon - Vanessa</title>
 </head>
 <body>
@@ -14,11 +15,11 @@
             <img class="logo" src="img/logo.png" alt="logo">
             <nav id="mainNav">
                 <ul>
-                    <li>
-                        <a href="#" class="active">მთავარი</a>
+                    <li class="main">
+                        <a href="#" onclick="showSections()" id="main-page" class="active">მთავარი</a>
                     </li>
                     <li>
-                        <a href="">ჩვენს შესახებ </a>
+                        <a href="" id="footer-active">ჩვენს შესახებ </a>
                     </li>
                     <li>
                         <a href="">სერვისი</a>
@@ -37,21 +38,21 @@
        
         </div>
     </header>
-    <section class="welcome animated fadeIn">
+    <section id="welcome" class="welcome animated fadeIn">
         <div class="container">
             <div class="welcome-content animated fadeIn">
             <div class="wlcome-text">
                <h1 class="heading">მოგესალმებით სილამაზის სალონი ვანესას ოფიციალურ ვებ-საიტზე</h1>
                
             </div>
-            <button class="sent-apply">წინასწარ ჩაწერა</button>
+            <button class="sent-apply" id="sent-appley" onclick="hideSections()">წინასწარ ჩაწერა</button>
         </div>
-        <div class="more-detail">
+        <button class="more-detail">
          უფრო დეტალურად
-        </div>
+        </button>
         </div>
     </section>
-    <section class="services">
+    <section class="services" id="services">
         <div class="container-sec">
             <div class="service-container">
               
@@ -88,7 +89,37 @@
     </section>
    
 
+<section class="applying" id="enter-apply">
+  <div class="container">
+    <div class="cont-apply">
+    <img src="img/apply-photo.svg" alt="photo-sent">
+    <div class="inputs">
 
+     <div class="input-div">
+      <label for="">სახელი</label>
+      <input type="text" placeholder="">
+    </div> 
+    
+    <div class="input-div">
+      <label for="">გვარი</label>
+      <input type="text" placeholder="">
+    </div> 
+
+    <div class="input-div">
+      <label for="">ტელეფონის ნომერი</label>
+      <input type="" placeholder="">
+    </div> 
+
+    
+    <div class="input-div">
+      <label for="">სერვისი</label>
+      <input type="text" placeholder="">
+    </div> 
+    <button class="sent-applying">ჩაწერა</button>
+    </div>
+  </div>
+  </div>
+</section>
 
     
     <footer class="footer">
@@ -105,13 +136,9 @@
             <h4>ჩვენი ელექტრონული ფოსტა</h4>
             <p class="footer-email">Email: example@example.com</p>
           </div>
-          <div class="footer-col">
-            <h4>დახმარება...</h4>
-            <form action="#">
-              <input type="text" placeholder="Your email" required>
-              <button type="submit">დახმარება</button>
-            </form>
-          </div>
+          <div class="location">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d226.89146592330076!2d44.11247294880963!3d41.98371958183386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40449f0075d5157f%3A0xf6a01d6726d8c25d!2z4YOh4YOY4YOa4YOQ4YOb4YOQ4YOW4YOY4YOhIOGDoeGDkOGDmuGDneGDnOGDmCDhg5Xhg5Dhg5zhg5Thg6Hhg5A!5e0!3m2!1ska!2sge!4v1714745925113!5m2!1ska!2sge" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>          </div>
+        
         </div>
     </div>
       </footer>

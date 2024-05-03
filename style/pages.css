@@ -1,0 +1,50 @@
+
+.inputs{
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.input-div{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+input{
+    height: 50px;
+    width: 300px;
+    margin: 2% ;
+    border-radius: 3px;
+      /* Add your custom styles here */
+      border: 1px solid rgba(255, 255, 255, 0.397);
+      padding: 15px;
+      color: #fff;
+      /* Add any other custom styles */
+      outline: none; /* Remove the default focus outline */
+      background-color: transparent;
+    }
+    label{
+      color: #fff;
+      font-size: 14px;
+      margin-left: 5%;
+    }
+    .applying{
+      height: 800px;
+    }
+.cont-apply{
+  margin-top: 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sent-applying{
+  text-decoration: none;
+  color: #FED154;
+  background-color: #2A2F35;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 60px;
+  width: 300px;
+  font-size: 15px;
+  margin-left: 2%;
+}

@@ -100,7 +100,7 @@
     height: 1070px;
     max-width: 1920px;
     max-height: 883px;
-    background-image: url(../img/background.png);
+    background-image: url(../img/background.webp);
   }
   .container{
     width: 90%; /* Adjust the percentage as per your design */
@@ -153,6 +153,7 @@
   }
   .services{
     margin: 100px 0;
+    display: block;
     
   }
   .service-container{
@@ -178,7 +179,7 @@
     -webkit-box-shadow: 0px 0px 70px -35px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 70px -35px rgba(0,0,0,0.75);
     box-shadow: 0px 0px 70px -35px rgba(0,0,0,0.75);
-    background-image: url(../img/service-img.png);
+    background-image: url(../img/service-img.webp);
     border-radius: 10px;
     margin-bottom: 3vw;
   }
@@ -186,6 +187,7 @@
     margin: 250px 30px;
   }
   .heading-content{
+    
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -300,13 +302,29 @@
     padding-left: 10px;
   }
   .more-detail{
-    font-size: 20px;
+    width: 220px;
+    height: 50px;
+    font-size: 17px;
     color: #fff;
     display: inline-block;
-   
+    cursor: pointer;
     bottom: 5%;
     left: 45%;
+    background-color: #25292F;     
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'FiraGO', sans-serif;
   }
+  
+  .disable-scroll {
+    overflow: hidden;
+}
+.applying{
+  display: none;
+}
+
 
   
   
@@ -351,9 +369,12 @@
     text-align: center; /* Horizontally centers inline or inline-block elements */
   }
   .welcome-content {
+    margin-top: 20%;
     display: inline-block; /* Ensures block-level elements are centered */
     /* Your styles for the content */
 }
+
+
 .sent-apply{
   margin: 0 auto;
 }
@@ -400,20 +421,29 @@
     margin-bottom: 0;
   }
   li{
+    
     margin-bottom: 20%;
   }
+  
   .logo{
     z-index: 2;
   }
   .more-detail{
-    font-size: 20px;
+    font-size: 14px;
     color: #fff;
     display: inline-block;
-    bottom: 20%;
+    bottom: 5%;
     left: 35%;
+    margin-top: 15%;
+  }
+  .heading-content{
+    transform: scale(0.8);
+  }
+  nav li a{
+    font-size: 20px;
   }
 }
-@media screen and (min-width: 678px) {
+@media screen and (min-width: 679px) {
   .burger-menu{
     display: none;
   }
@@ -425,6 +455,7 @@
     display: none !important;
   }
 }
+
 
 
 /* Mobile */
@@ -450,7 +481,7 @@
   .heading{
     margin: 0 12px 20px;
     font-size: 28px;
-    width: 300px;
+    width: 90%;
   }
   .sent-apply{
     transform: scale(0.9);
@@ -460,7 +491,7 @@
     
     display: flex;
     flex-wrap: wrap;
-   
+    margin-top: 40%;
     justify-content: space-between;
     align-items: center;
   }
@@ -469,6 +500,7 @@
 @media screen and (min-width: 678px) {
 .more-detail{
   position: absolute;
+  
 
 }
 }
