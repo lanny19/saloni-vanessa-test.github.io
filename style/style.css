@@ -100,7 +100,7 @@
     height: 1070px;
     max-width: 1920px;
     max-height: 883px;
-    background-image: url(/img/background.png);
+    background-image: url(../img/background.png);
   }
   .container{
     width: 90%; /* Adjust the percentage as per your design */
@@ -178,7 +178,7 @@
     -webkit-box-shadow: 0px 0px 70px -35px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 70px -35px rgba(0,0,0,0.75);
     box-shadow: 0px 0px 70px -35px rgba(0,0,0,0.75);
-    background-image: url(/img/service-img.png);
+    background-image: url(../img/service-img.png);
     border-radius: 10px;
     margin-bottom: 3vw;
   }
@@ -460,7 +460,7 @@
     
     display: flex;
     flex-wrap: wrap;
-    align-content: ;
+   
     justify-content: space-between;
     align-items: center;
   }
@@ -469,6 +469,6 @@
 @media screen and (min-width: 678px) {
 .more-detail{
   position: absolute;
-  
+
 }
 }
