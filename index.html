@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/reset.css">
     <link rel="stylesheet" href="style/style.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/faction.svg" type="image/x-icon">
     <link rel="stylesheet" href="style/pages.css">
     <link href="https://free.bboxtype.com/embedfonts/?family=FiraGO:300,400,500,600" rel="stylesheet">    <title>Salon - Vanessa</title>
 </head>
@@ -19,10 +19,10 @@
                         <a href="#" onclick="showSections()" id="main-page" class="active">მთავარი</a>
                     </li>
                     <li>
-                        <a href="" id="footer-active">ჩვენს შესახებ </a>
+                        <a onclick="closeNav()" href="" id="footer-active">ჩვენს შესახებ </a>
                     </li>
                     <li>
-                        <a href="">სერვისი</a>
+                        <a href="" id="serv" onclick="closeNav()">სერვისი</a>
                     </li>
                      <li>
                         <a href="">კონტაქტი</a>
@@ -91,10 +91,13 @@
 
 <section class="applying" id="enter-apply">
   <div class="container">
-    <div class="cont-apply">
-    <img src="img/apply-photo.svg" alt="photo-sent">
+    <div class="cont-apply fade-in">
+    <img class="apply-photo " src="img/apply-photo.svg" alt="photo-sent">
     <div class="inputs">
-
+      <div class="heading-sent">
+        <h1 class="heading-apply">შეიყვანეთ თქვენი ინფორმაცია</h1>
+        <p class="paragraph-apply">და დაჯავშნეთ წინასწარ ჩვენს სალონში სასურველი მომსახურება</p>
+      </div>
      <div class="input-div">
       <label for="">სახელი</label>
       <input type="text" placeholder="">
@@ -115,7 +118,7 @@
       <label for="">სერვისი</label>
       <input type="text" placeholder="">
     </div> 
-    <button class="sent-applying">ჩაწერა</button>
+    <button class="sent-applying">წინასწარ ჩაწერა</button>
     </div>
   </div>
   </div>
@@ -128,8 +131,12 @@
           <div class="footer-col">
             <h4>ჩვენს შესახებ</h4>
             <ul class="links">
-              <li><a href="https://www.facebook.com/silamazissaloni.vanesa">Facebook გვერდი</a></li>
-              <li><a href="#">Link 2</a></li>
+              <li>
+                <a href="https://www.facebook.com/silamazissaloni.vanesa">Facebook გვერდი</a>
+              </li>
+              <li>
+                <a href="#">Link 2</a>
+              </li>
             </ul>
           </div>
           <div class="footer-col">
@@ -137,11 +144,13 @@
             <p class="footer-email">Email: example@example.com</p>
           </div>
           <div class="location">
+            <h1 class="map-heading">მისამართი : სტალინის 20</h1>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d226.89146592330076!2d44.11247294880963!3d41.98371958183386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40449f0075d5157f%3A0xf6a01d6726d8c25d!2z4YOh4YOY4YOa4YOQ4YOb4YOQ4YOW4YOY4YOhIOGDoeGDkOGDmuGDneGDnOGDmCDhg5Xhg5Dhg5zhg5Thg6Hhg5A!5e0!3m2!1ska!2sge!4v1714745925113!5m2!1ska!2sge" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>          </div>
         
         </div>
     </div>
       </footer>
     <script src="js/main.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>

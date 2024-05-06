@@ -10,12 +10,12 @@
   margin-bottom: 10px;
 }
 input{
-    height: 50px;
-    width: 300px;
+    height: 55px;
+    width: 320px;
     margin: 2% ;
-    border-radius: 3px;
+    border-radius: 5px;
       /* Add your custom styles here */
-      border: 1px solid rgba(255, 255, 255, 0.397);
+      border: 0.01px solid rgba(255, 255, 255, 0.192);
       padding: 15px;
       color: #fff;
       /* Add any other custom styles */
@@ -31,7 +31,7 @@ input{
       height: 800px;
     }
 .cont-apply{
-  margin-top: 8%;
+  margin-top: 4%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -44,7 +44,81 @@ input{
   border-radius: 5px;
   cursor: pointer;
   height: 60px;
-  width: 300px;
+  width: 320px;
   font-size: 15px;
   margin-left: 2%;
+  margin-top: 10px;
+  font-weight: 100;
+}
+.apply-photo{
+  height: 21.875vw;
+}
+.heading-apply{
+  color: #fff;
+  font-size: 25px;
+  font-weight: 100;
+  text-align: center;
+  width: 80%;
+  margin: 15px 0;
+}
+.paragraph-apply{
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 100;
+  width: 80%;
+  margin: 15px 0;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeInAnimation 0.7s ease-in-out forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.cont-apply {
+  display: flex;
+  justify-content: center;
+}
+.heading-sent{
+  max-width: 400px;
+  transform: translateX(10%)
+}
+
+.inputs {
+  width: 100%;
+  max-width: 400px; /* Adjust as needed */
+  padding: 10px;
+}
+
+.inputs .input-div {
+  margin-bottom: 15px;
+}
+
+.inputs .input-div label {
+  display: block;
+}
+
+.inputs .input-div input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+}
+
+.sent-applying {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
 }

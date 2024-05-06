@@ -171,6 +171,7 @@
     flex-wrap: wrap;
     margin: 0;
     padding: 0;
+    transform: scale(0.9);
   }
   .cards{
     
@@ -224,7 +225,7 @@
 
   }
   .animated {
-    animation-duration: 1s;
+    animation-duration: 0.2s;
   }
   
   @keyframes fadeIn {
@@ -301,6 +302,11 @@
     color: #fff;
     padding-left: 10px;
   }
+  .map-heading{
+    font-size: 17px;
+    color: #fff;
+    margin: 0 0 10px 20px;
+  }
   .more-detail{
     width: 220px;
     height: 50px;
@@ -352,6 +358,13 @@
 
 /* Tablet */
 @media screen and (max-width: 768px) {
+  .apply-photo{
+    display: none;
+  }
+  .inputs {
+    margin-left: 5%;
+    transform: scale(1);
+  }
 
   .swiper-wrapper{
     transform: scale(0.4); 
@@ -373,8 +386,15 @@
     display: inline-block; /* Ensures block-level elements are centered */
     /* Your styles for the content */
 }
+  .footer-row{
 
+  }
 
+header{
+  z-index: 1;
+  width: 100%;
+  position: fixed;
+}
 .sent-apply{
   margin: 0 auto;
 }
@@ -442,6 +462,20 @@
   nav li a{
     font-size: 20px;
   }
+
+  .cont-apply{
+    display: flex;
+    justify-content: center;
+  }
+  .inputs {
+    width: 100%; /* Optionally set a maximum width */
+    max-width: 600px; /* Adjust as needed */
+    
+  }
+  label{
+ 
+  }
+
 }
 @media screen and (min-width: 679px) {
   .burger-menu{
@@ -453,6 +487,9 @@
   }
   .close {
     display: none !important;
+  }
+  .inputs {
+    margin-left: 15%;
   }
 }
 

@@ -132,3 +132,14 @@ function showSections() {
 }
 
 
+document.addEventListener("DOMContentLoaded", function() {
+  var moreDetailButton = document.getElementById("serv");
+  var servicesSection = document.querySelector(".services");
+
+  moreDetailButton.addEventListener("click", function() {
+    // Scroll to the services section with smooth animation
+    servicesSection.scrollIntoView({ behavior: "smooth", block: "start" });
+  });
+});
+
+
