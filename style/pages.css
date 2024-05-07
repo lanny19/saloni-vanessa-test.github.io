@@ -29,6 +29,7 @@ input{
     }
     .applying{
       height: 800px;
+      width: 100%;
     }
 .cont-apply{
   margin-top: 4%;

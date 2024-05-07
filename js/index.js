@@ -50,19 +50,38 @@ function closeNav(){
 // Get all <a> elements
 const links = document.querySelectorAll('a');
 
+// Get the target element
+const mainPageLink = document.getElementById('main-page');
+
 // Listen for scroll events
 window.addEventListener('scroll', () => {
-  // Loop through each <a> element
-  links.forEach(link => {
-    // Check if the <a> element is the target
-    if (link.id === 'main-page') {
-      // Add 'active' class to the target element
-      link.classList.add('active');
-    } else {
-      // Remove 'active' class from other elements
+  // Get the scroll position
+  const scrollPosition = window.scrollY || window.pageYOffset;
+
+  // Check if scrolling up
+  if (scrollPosition === 0) {
+    // Remove 'active' class from all <a> elements
+    links.forEach(link => {
       link.classList.remove('active');
-    }
-  });
+    });
+    // Add 'active' class to the target element
+    mainPageLink.classList.add('active');
+  }
 });
 
 
+// Get the main-page and welcome elements
+const mainLink = document.getElementById('main-page');
+const welcomeSection = document.getElementById('welcome');
+
+// Listen for click events on the main-page link
+mainLink.addEventListener('click', (event) => {
+  // Prevent default link behavior
+  event.preventDefault();
+  
+  // Check if the welcome section is displayed as flex
+  if (getComputedStyle(welcomeSection).display === 'flex') {
+    // Scroll up to the welcome section
+    welcomeSection.scrollIntoView({ behavior: 'smooth' });
+  }
+});

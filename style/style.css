@@ -470,7 +470,7 @@ header{
   .inputs {
     width: 100%; /* Optionally set a maximum width */
     max-width: 600px; /* Adjust as needed */
-    
+    margin-top: 20%;
   }
   label{
  
@@ -520,6 +520,9 @@ header{
     font-size: 28px;
     width: 90%;
   }
+  .container{
+    width: 95%; /* Adjust the percentage as per your design */
+  }
   .sent-apply{
     transform: scale(0.9);
     z-index: 0;
@@ -531,6 +534,9 @@ header{
     margin-top: 40%;
     justify-content: space-between;
     align-items: center;
+  }
+  .inputs {
+    transform: scale(0.9);
   }
 }
   
