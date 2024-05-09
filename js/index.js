@@ -85,3 +85,6 @@ mainLink.addEventListener('click', (event) => {
     welcomeSection.scrollIntoView({ behavior: 'smooth' });
   }
 });
+
+
+

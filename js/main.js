@@ -112,22 +112,26 @@ function hideSections() {
   var welcomeSection = document.getElementById("welcome");
   var servicesSection = document.getElementById("services");
   var applySection = document.getElementById("enter-apply");
+  var slideSection = document.getElementById("slide");
 
   // Hide the welcome and services sections
   welcomeSection.style.display = "none !important";
   servicesSection.style.display = "none";
   applySection.style.display = "flex";
   applySection.style.backgroundColor = "#1E2329";
+  slideSection.style.display = "none";
 }
 
 function showSections() {
   var welcomeSection = document.getElementById("welcome");
   var servicesSection = document.getElementById("services");
   var applySection = document.getElementById("enter-apply");
+  var slideSection = document.getElementById("slide")
   // Show the welcome and services sections
   welcomeSection.style.display = "flex ";
   servicesSection.style.display = "block ";
   applySection.style.display = "none ";
+  slideSection.style.display = "block";
   
 }
 

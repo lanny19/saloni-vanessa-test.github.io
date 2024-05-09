@@ -1,0 +1,47 @@
+body{
+    background-color: #1e2024;
+}
+*{
+    font-family: 'FiraGO', sans-serif !important;
+}
+.applied{
+    margin-top: 20%;
+}
+h1{
+    font-size: 30px;
+    font-weight: 500;
+}
+h2{
+    font-size: 20px;
+    font-weight: 300;
+}
+p{
+    font-size: 18px;
+    font-weight: 200;
+}
+.container{
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    text-shadow: 2px 2px 350px rgba(255, 195, 29, 0.541);    z-index: 2;
+}
+h1,h2,p {
+    color: #fff;
+    margin-bottom: 30px;
+}
+.back{
+    text-decoration: none;
+  color: #FED154;
+  background-color: #2A2F35;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 60px;
+  width: 381px;
+  font-size: 15px;
+}
+@media screen and (max-width: 678px){
+    .applied{
+        margin-top: 50%;
+    }
+}

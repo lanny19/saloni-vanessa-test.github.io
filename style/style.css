@@ -314,7 +314,7 @@
     color: #fff;
     display: inline-block;
     cursor: pointer;
-    bottom: 5%;
+    bottom: -55%;
     left: 45%;
     background-color: #25292F;     
     text-decoration: none;
@@ -322,6 +322,11 @@
     border-radius: 5px;
     cursor: pointer;
     font-family: 'FiraGO', sans-serif;
+  }
+  /* slide section*/
+  .slide{
+    height: 1000px;
+    background-color: #2A2F35;
   }
   
   .disable-scroll {
@@ -475,6 +480,9 @@ header{
   label{
  
   }
+  .swiper-slide {
+    transform: scale(0.5);
+  }
 
 }
 @media screen and (min-width: 679px) {
@@ -497,18 +505,11 @@ header{
 
 /* Mobile */
 @media screen and (max-width: 480px) {
-  .swiper{
-      height: auto; /* Auto height */
+  
 
+  .swiper-slide {
+    transform: scale(0.5);
   }
-
-  .swiper-wrapper{
-      flex-direction: column; /* Display swiper cards in a column */
-      align-items: center;
-      justify-content: center; /* Center cards horizontally */
-      overflow-x: hidden; /* Hide horizontal scrollbar */
-  }
-
   .card{
       margin: 1em 0; /* Adjust margin */
   }

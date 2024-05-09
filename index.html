@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="style/style.css">
     <link rel="shortcut icon" href="img/faction.svg" type="image/x-icon">
     <link rel="stylesheet" href="style/pages.css">
-    <link href="https://free.bboxtype.com/embedfonts/?family=FiraGO:300,400,500,600" rel="stylesheet">    <title>Salon - Vanessa</title>
+    <link rel="stylesheet" href="style/slide.css">
+    <link rel="stylesheet" href="style/swiper-bundle.min.css">
+    <link href="https://free.bboxtype.com/embedfonts/?family=FiraGO:100,200,300,400,500,600" rel="stylesheet">    <title>Salon - Vanessa</title>
 </head>
 <body>
     <header>
@@ -27,7 +29,7 @@
                         <a href="" id="serv" onclick="closeNav()">სერვისი</a>
                     </li>
                      <li>
-                        <a href="">კონტაქტი</a>
+                        <a href="">ნამუშევრები</a>
                     </li>
                     <div class="close" id="closeButton" onclick="closeBut()"><img src="img/close.svg" alt="close" class="close-but"></div>
 
@@ -41,8 +43,8 @@
         </div>
     </header>
     <section id="welcome" class="welcome animated fadeIn">
-        <div class="container">
-            <div class="welcome-content animated fadeIn">
+        <div class="container fade-in">
+            <div class="welcome-content animated fade-in">
             <div class="wlcome-text">
                <h1 class="heading">მოგესალმებით სილამაზის სალონი ვანესას ოფიციალურ ვებ-საიტზე</h1>
                
@@ -89,6 +91,23 @@
             </div>
         </div>
     </section>
+    <!--
+      slide--->
+    <section class="slide" id="slide">
+      <div class="swiper-container">
+        <div class="swipper-heading">
+          <h1 class="slide-heading">ჩვენი ნამუშევრები</h1>
+        </div>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide" id="slide">Slide 1</div>
+            <div class="swiper-slide" id="slide">Slide 2</div>
+            <div class="swiper-slide" id="slide">Slide 3</div>
+            <div class="swiper-slide" id="slide" >Slide 4</div>
+            <div class="swiper-slide">Slide 5</div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
    
 
 <section class="applying" id="enter-apply">
@@ -100,27 +119,33 @@
         <h1 class="heading-apply">შეიყვანეთ თქვენი ინფორმაცია</h1>
         <p class="paragraph-apply">და დაჯავშნეთ წინასწარ ჩვენს სალონში სასურველი მომსახურება</p>
       </div>
+      <form id="sheetdb-form" action="https://sheetdb.io/api/v1/cnva0x36x6jqo" method="post" >
      <div class="input-div">
       <label for="">სახელი</label>
-      <input type="text" placeholder="">
+      <input type="text" placeholder="თქვენი სახელი" name="data [name]" required>
     </div> 
     
     <div class="input-div">
       <label for="">გვარი</label>
-      <input type="text" placeholder="">
+      <input type="text" placeholder="თქვენი გვარი" name="data [surname]" required>
     </div> 
 
     <div class="input-div">
       <label for="">ტელეფონის ნომერი</label>
-      <input type="" placeholder="">
+      <input type="text" placeholder="თქვენი ტელეფონის ნომერი" name="data [phone-number]" required>
+      <input style="display: none;" type="date" name="data [date]" id="dateInput">
     </div> 
 
     
     <div class="input-div">
       <label for="">სერვისი</label>
-      <input type="text" placeholder="">
+      <input type="text" placeholder="სასურველი სერვისი" name="data [services]" required>
     </div> 
-    <button class="sent-applying">წინასწარ ჩაწერა</button>
+    
+ 
+    <input type="submit" value="წინასწარ ჩაწერა" id="submitBtn">
+      </form>
+ 
     </div>
   </div>
   </div>
@@ -152,7 +177,41 @@
         </div>
     </div>
       </footer>
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+      <script src="js/swiper.js"></script>
     <script src="js/main.js"></script>
     <script src="js/index.js"></script>
+
+    <script>
+      var form = document.getElementById('sheetdb-form');
+  form.addEventListener("submit", e => {
+    e.preventDefault();
+    fetch(form.action, {
+        method : "POST",
+        body: new FormData(document.getElementById("sheetdb-form")),
+    }).then(
+        response => response.json()
+    ).then((html) => {
+      // you can put any JS code here
+      window.open('page2.html', '_blank');
+
+    });
+  });
+  </script>
+      
+      <script>
+        // Get the current date
+        var today = new Date();
+    
+        // Format the date as YYYY-MM-DD (required by the date input)
+        var yyyy = today.getFullYear();
+        var mm = String(today.getMonth() + 1).padStart(2, '0');
+        var dd = String(today.getDate()).padStart(2, '0');
+        var formattedDate = yyyy + '-' + mm + '-' + dd;
+    
+        // Set the value of the date input field to the current date
+        document.getElementById("dateInput").value = formattedDate;
+    </script>
 </body>
 </html>
